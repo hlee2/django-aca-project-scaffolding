@@ -1,6 +1,3 @@
-
-#STATIC_ROOT = '/Users/charlonpalacay/Django/vanilla/scaffold_proj/scaffold_app/static'
-
 # django compressor  and less-c compiler
 
 COMPRESS_ENABLED = False
@@ -22,5 +19,6 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.static',
     'django.core.context_processors.tz',
     'django.contrib.messages.context_processors.messages',
-    'app_name.context_processors.is_desktop',
+    # To use the is_desktop context processor, replace app_name and uncomment the following line:
+    #'app_name.context_processors.is_desktop',
 )

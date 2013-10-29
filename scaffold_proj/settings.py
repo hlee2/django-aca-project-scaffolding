@@ -1,4 +1,4 @@
-# Django settings for scaffold_proj project.
+# Django settings for {{ project_name }} project.
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -107,10 +107,10 @@ MIDDLEWARE_CLASSES = (
     'mobility.middleware.XMobileMiddleware',
 )
 
-ROOT_URLCONF = 'scaffold_proj.urls'
+ROOT_URLCONF = '{{ project_name }}.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
-WSGI_APPLICATION = 'scaffold_proj.wsgi.application'
+WSGI_APPLICATION = '{{ project_name }}.wsgi.application'
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
@@ -130,7 +130,7 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
     
-    'app_name',
+    # 'app_name',
     'compressor',
     'templatetag_handlebars',
 )

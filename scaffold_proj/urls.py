@@ -6,8 +6,8 @@ from django.conf.urls import patterns, include, url
 
 urlpatterns = patterns('',
     # Examples:
-    # url(r'^$', 'scaffold_proj.views.home', name='home'),
-    # url(r'^scaffold_proj/', include('scaffold_proj.foo.urls')),
+    # url(r'^$', '{{ project_name }}.views.home', name='home'),
+    # url(r'^{{ project_name }}/', include('{{ project_name }}.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
@@ -16,5 +16,5 @@ urlpatterns = patterns('',
     # url(r'^admin/', include(admin.site.urls)),
     
     # include the scaffolded application
-    url(r'^', include('app_name.urls')),
+    #url(r'^', include('app_name.urls')),
 )
